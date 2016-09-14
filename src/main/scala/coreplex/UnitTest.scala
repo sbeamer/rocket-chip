@@ -7,7 +7,6 @@ import uncore.tilelink.TLId
 import cde.Parameters
 
 class UnitTestCoreplex(tp: Parameters, tc: CoreplexConfig) extends Coreplex()(tp, tc) {
-  require(!tc.hasExtMMIOPort)
   require(tc.nSlaves == 0)
   require(tc.nMemChannels == 0)
 
